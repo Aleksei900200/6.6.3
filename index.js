@@ -1,13 +1,13 @@
-let anyNumber = +prompt('Введите любое число (больше нуля и желательно меньше 10)');
+let AnyNumber = +prompt('Введите любое число (больше нуля и желательно меньше 10)');
 
-console.log(anyNumber);
-function F1(anyNumber) {
-  let array = [];
-  for (i = anyNumber; i >= 0; i--) {
-    array.unshift(i);
+console.log(AnyNumber);
+function F1(AnyNumber) {
+  const ArrayOne = [];
+  for (i = AnyNumber; i >= 0; i--) {
+    ArrayOne.unshift(i);
   }
-  return array;
+  return ArrayOne;
 }
-let newArray = F1(anyNumber);
-console.log(newArray);
-alert(newArray);
+const NewArray = F1(AnyNumber);
+console.log(NewArray);
+alert(NewArray);
